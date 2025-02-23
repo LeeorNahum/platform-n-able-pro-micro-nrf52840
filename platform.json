@@ -28,7 +28,7 @@
     }
   },
   "packages": {
-    "framework-n-able-arduino": {
+    "framework-n-able-arduino-pro-micro-nrf52840": {
       "type": "framework",
       "optional": false,
       "version": "https://github.com/LeeorNahum/n-able-Arduino-pro-micro-nrf52840.git#master"
