@@ -249,7 +249,8 @@ elif upload_protocol == "nrfjprog":
 
 elif upload_protocol == "nrfutil":
     env.Replace(
-        UPLOADER="nrfutil",
+        UPLOADER=join(platform.get_package_dir(
+            "tool-adafruit-nrfutil") or "", "adafruit-nrfutil.py"),
         UPLOADERFLAGS=[
             "dfu",
             "serial",
@@ -257,16 +258,19 @@ elif upload_protocol == "nrfutil":
             "$UPLOAD_PORT",
             "-b",
             "$UPLOAD_SPEED",
+            "--singlebank",
         ],
-        UPLOADCMD='$UPLOADER $UPLOADERFLAGS -pkg $SOURCE'
+        UPLOADCMD='"$PYTHONEXE" "$UPLOADER" $UPLOADERFLAGS -pkg $SOURCE'
     )
     upload_actions = [
         env.VerboseAction(BeforeUpload, "Looking for upload port..."),
-        env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE"),
-        env.VerboseAction(AfterUpload, "Looking for upload port..."),
+        env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE")
     ]
 
-elif upload_protocol == "adafruit-nrfutil":
+elif "adafruit-nrfutil" == upload_protocol or (
+    board.get("build.bsp.name", "nrf5") == "adafruit"
+    and "arduino" in env.get("PIOFRAMEWORK", [])
+):
     env.Replace(
         UPLOADER=join(platform.get_package_dir(
             "tool-adafruit-nrfutil") or "", "adafruit-nrfutil.py"),
