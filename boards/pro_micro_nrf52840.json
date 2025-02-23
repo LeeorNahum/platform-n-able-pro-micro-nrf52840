@@ -71,5 +71,6 @@
     "require_upload_port": true,
     "wait_for_upload_port": true
   },
-  "url": "https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html"
+  "url": "https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html",
+  "vendor": "nice!nano"
 }
