@@ -23,7 +23,7 @@
   "version": "1.1.0",
   "frameworks": {
     "arduino": {
-      "package": "framework-n-able-arduino",
+      "package": "framework-n-able-arduino-pro-micro-nrf52840",
       "script": "builder/frameworks/arduino/nrf5.py"
     }
   },

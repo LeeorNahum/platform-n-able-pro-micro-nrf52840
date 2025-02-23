@@ -22,7 +22,7 @@ from platformio.public import PlatformBase
 IS_WINDOWS = sys.platform.startswith("win")
 
 
-class NablePlatform(PlatformBase):
+class NableProMicroNrf52840Platform(PlatformBase):
 
     def is_embedded(self):
         return True
