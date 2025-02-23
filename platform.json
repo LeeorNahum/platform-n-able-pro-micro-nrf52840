@@ -1,8 +1,8 @@
 {
-  "name": "n-able",
-  "title": "n-able",
+  "name": "n-able-pro-micro-nrf52840",
+  "title": "n-able-pro-micro-nrf52840",
   "description": "Development platform for Arm BLE devices supported by the NimBLE stack",
-  "homepage": "https://github.com/h2zero/platform-n-able",
+  "homepage": "https://github.com/LeeorNahum/platform-n-able-pro-micro-nrf52840",
   "license": "Apache-2.0",
   "keywords": [
     "dev-platform",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/h2zero/platform-n-able.git"
+    "url": "https://github.com/LeeorNahum/platform-n-able-pro-micro-nrf52840"
   },
   "version": "1.1.0",
   "frameworks": {
@@ -31,7 +31,7 @@
     "framework-n-able-arduino": {
       "type": "framework",
       "optional": false,
-      "version": "https://github.com/h2zero/n-able-Arduino.git@0.2.0"
+      "version": "https://github.com/LeeorNahum/n-able-Arduino-pro-micro-nrf52840.git#master"
     },
     "toolchain-gccarmnoneeabi": {
       "type": "toolchain",
