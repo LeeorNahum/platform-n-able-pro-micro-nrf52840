@@ -2,6 +2,13 @@
 
 This fork adds compatibility for the Pro Micro nRF52840 board to the platform-n-able project. It works in conjunction with the [n-able-Arduino-pro-micro-nrf52840](https://github.com/LeeorNahum/n-able-Arduino-pro-micro-nrf52840) framework to provide full PlatformIO support for NimBLE on the Pro Micro nRF52840.
 
+More of a board type than a unique board, It is based on Nice!Nano. Also referred to as Pro Micro, Promicro, SuperMini nRF52840 boards.
+
+## References
+- [Pro Micro nRF52840 — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html)
+- [Pro Micro Alternatives Wiki](https://github.com/joric/nrfmicro/wiki/Alternatives#supermini-nrf52840)
+- [Nice!Nano Pinout and Schematic](https://nicekeyboards.com/docs/nice-nano/pinout-schematic/)
+
 ## Updated Usage for Pro Micro nRF52840
 
 To use this platform with the Pro Micro nRF52840, configure your `platformio.ini` as follows:
