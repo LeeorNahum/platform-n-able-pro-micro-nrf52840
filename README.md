@@ -7,12 +7,13 @@ This fork adds compatibility for the Pro Micro nRF52840 board to the platform-n-
 To use this platform with the Pro Micro nRF52840, configure your `platformio.ini` as follows:
 
 ```ini
-[env:platform-n-able-pro-micro-nrf52840]
+[env:pro_micro_nrf52840]
 platform = https://github.com/LeeorNahum/platform-n-able-pro-micro-nrf52840.git#master
 board = pro_micro_nrf52840
 framework = arduino
 
-board_bootloader = adafruit
+lib_deps =
+  https://github.com/h2zero/NimBLE-Arduino.git#master
 ```
 
 # Development platform for ARM BLE devices supported by [Apache NimBLE](https://github.com/apache/mynewt-nimble) for [PlatformIO](https://platformio.org)
