@@ -8,6 +8,7 @@ More of a board type than a unique board, It is based on Nice!Nano. Also referre
 - [Pro Micro nRF52840 — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/others/promicro_nrf52840/doc/index.html)
 - [Pro Micro Alternatives Wiki](https://github.com/joric/nrfmicro/wiki/Alternatives#supermini-nrf52840)
 - [Nice!Nano Pinout and Schematic](https://nicekeyboards.com/docs/nice-nano/pinout-schematic/)
+- [TinyGo Nice!Nano Reference](https://tinygo.org/docs/reference/microcontrollers/machine/nicenano/)
 
 ## Updated Usage for Pro Micro nRF52840
 
