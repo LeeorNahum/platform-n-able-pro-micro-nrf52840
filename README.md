@@ -2,6 +2,12 @@
 
 This fork adds compatibility for the Pro Micro nRF52840 board to the platform-n-able project. It works in conjunction with the [n-able-Arduino-pro-micro-nrf52840](https://github.com/LeeorNahum/n-able-Arduino-pro-micro-nrf52840) framework to provide full PlatformIO support for NimBLE on the Pro Micro nRF52840.
 
+## FastLED and I2C Compatibility Fixes
+
+This platform fork incorporates fixes from [sandeepmistry/arduino-nRF5](https://github.com/sandeepmistry/arduino-nRF5) that enable compatibility with FastLED and similar libraries that require nRF NVIC support. FastLED pin definitions for the nRF52840 can be found in the [fastpin_arm_nrf52_variants.h](https://github.com/FastLED/FastLED/blob/fdcb87acd05f858e55a16d0fe92bf25a39599d72/src/platforms/arm/nrf52/fastpin_arm_nrf52_variants.h#L658-L683) file.
+
+The Wire library has also been updated from sandeepmistry's implementation to fix issues when communicating with I2C devices like the BNO085 that violate the I2C protocol and don't work properly with the standard implementation.
+
 More of a board type than a unique board, It is based on Nice!Nano. Also referred to as Pro Micro, Promicro, SuperMini nRF52840 boards.
 
 ## References
@@ -23,6 +29,11 @@ framework = arduino
 lib_deps =
   https://github.com/h2zero/NimBLE-Arduino.git#master
 ```
+
+---
+
+> [!NOTE]
+> Fork-specific modifications and documentation end here. Original platform-n-able documentation follows.
 
 # Development platform for ARM BLE devices supported by [Apache NimBLE](https://github.com/apache/mynewt-nimble) for [PlatformIO](https://platformio.org)
 

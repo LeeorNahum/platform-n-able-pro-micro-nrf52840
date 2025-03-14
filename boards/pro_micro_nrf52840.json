@@ -5,7 +5,7 @@
     },
     "core": "nRF5",
     "cpu": "cortex-m4",
-    "extra_flags": "-DARDUINO_NRF52_DK -DNRF52840_XXAA",
+    "extra_flags": "-DARDUINO_NRF52_DK -DNRF52840_XXAA -DFASTLED_NRF52_SUPPRESS_UNTESTED_BOARD_WARNING",
     "f_cpu": "64000000L",
     "hwids": [
       [
